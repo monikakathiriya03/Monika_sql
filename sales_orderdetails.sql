@@ -1,4 +1,4 @@
-create table sales_details(
+create table sales_orderdetails(
     OrderNo varchar(6),
     foreign key(OrderNo) REFERENCES sales_order(OrderNo),
     ProductNo varchar(6),
@@ -10,7 +10,7 @@ create table sales_details(
 
 
 
-insert into sales_details(OrderNo,ProductNo,Qtyordered,Qtydisp,Productrate) values
+insert into sales_orderdetails(OrderNo,ProductNo,Qtyordered,Qtydisp,Productrate) values
 ('O19001','P00001',4,4,525),
 ('O19001','P07965',2,1,8400),
 ('O19001','P07885',2,1,5250),

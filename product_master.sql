@@ -1,17 +1,18 @@
 create table product_master(
     ProductNo varchar(6) primary key,
-    PDescription varchar(15) not null,
+    Description varchar(15) not null,
     Profitpercent int not null,
     Unitmeasure varchar (10) not null,
     Qtyonhand int not null,
     Reorderlvl int not null,
     Sellprice int not null,
     Costprice int not null
+    
 );
 
 
 
-insert into product_master(ProductNo,PDescription,ProfitPercent,UnitMeasure,QtyOnHand,ReorderLvl,SellPrice,CostPrice) values
+insert into product_master(ProductNo,Description,ProfitPercent,UnitMeasure,QtyOnHand,ReorderLvl,SellPrice,CostPrice) values
 ("P00001","T-Shirts",5,"Piece",200,50,350,250),
 ("P0345","Shirts",6,"Piece",150,50,500,350),
 ("P06734","Cotton Jeans",5,"Piece",100,20,600,450),

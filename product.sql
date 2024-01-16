@@ -1,6 +1,6 @@
 create table product(
     ProductNo varchar(6),
-    PDescription varchar(15),
+    Description varchar(15),
     Profitpercent int,
     Unitmeasure varchar(10),
     Qtyonhand int,
@@ -9,7 +9,7 @@ create table product(
     Costprice int
 );
 
-insert into product(ProductNo,PDescription,ProfitPercent,UnitMeasure,QtyOnHand,ReorderLvl,SellPrice,CostPrice) values
+insert into product(ProductNo,Description,ProfitPercent,UnitMeasure,QtyOnHand,ReorderLvl,SellPrice,CostPrice) values
 ("P00001","T-Shirts",5,"Piece",200,50,350,250),
 ("P0345","Shirts",6,"Piece",150,50,500,350),
 ("P06734","Cotton Jeans",5,"Piece",100,20,600,450),
